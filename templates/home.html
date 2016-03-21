@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="../static/styles.css" />
-    <!-- <link rel="python" href="C:\groupProject\app\static\project.py" -->
+    <link rel="stylesheet" href="../static/styles.css"/>
 
   </head>
 <body>
@@ -18,11 +17,15 @@
 <!--Begin Left Column-->
     <section>
         <h2>What is your name?</h2>
-
-        <form class="form1" method="POST" action="%s"><input name="person" /><input type="submit" value="Continue" /></form>
-<!--Responsive YouTube Video-->
+        <!--Responsive YouTube Video-->
     <div class='embed-container'>
-
+        <form align="center" action="" method="post">
+            <input type="text" placeholder="your name" name="person" value="{{request.form.person}}"/>
+            <input type="submit" value="Continue" />
+        </form>
+        {% if error %}
+            <p class="error"><strong>Error:</strong>{{error}}</p>
+        {% endif %}
     </div>
     </section>
 <!--End Left Column-->
@@ -32,13 +35,13 @@
         <table>
             <caption><h3>Your Stats and Special Items</h3></caption>
             <tr>
-                <td><img src="heart%20(35x50).jpg" alt="heart health"/>&nbsp&nbspHealth</td>
+                <td><img src="/static/heart%20(35x50).jpg" alt="heart health"/>&nbsp&nbspHealth</td>
             </tr>
             <tr>
-                <td><img src="hungrystomach%20(50x47).jpg" alt="hunger"/>&nbsp&nbspHunger</td>
+                <td><img src="/static/hungrystomach%20(50x47).jpg" alt="hunger"/>&nbsp&nbspHunger</td>
             </tr>
             <tr>
-                <td><img src=""backpack%20(43x50).jpg" alt="special items"/>&nbsp&nbspSpecial Items</td>
+                <td><img src="/static/backpack%20(43x50).jpg" alt="special items"/>&nbsp&nbspSpecial Items</td>
             </tr>
         </table>
 

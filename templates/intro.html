@@ -6,20 +6,22 @@
     <meta charset="utf-8" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="python" href="C:\groupProject\app\static\project.py"
-    
-  </head>             
+    <link rel="stylesheet" href="/static/styles.css" />
+
+  </head>
 <body>
     <header><!--This next section can be rearranged to your desire or to suit your website design-->
    <!--- <h1>Welcome to your journey!</h1>    -->
-    
+
     </header>
 <!--Begin Left Column-->
     <section>
         <h2>And so it begins...</h2>
 <!--Responsive YouTube Video-->
     <div class='embed-container'>
+
+          <p>{{ greet, personne }}!</p>
+
        <p>As you wander into the wood you're shaking your head in disbelief...
         kicked out of yet another pub for involvement in a brawl....nevermind the fact that
         you actually started it!</p>
@@ -27,37 +29,38 @@
         <p>You pick yourself up and dust off your nether regions, pleased to note the only                damage is to your pride. You glance around and see to your right what appears to be            a lovely meadow. You leave the relative safety of the path and head toward green              grass and sunshine.</p>
         <p>The meadow is not large and in the center is a flat rock approximately 4 feet in              diameter. On the rock are two items which could be considered valuable. The first              is a pile of apples - 5 or 6 at a rough count. The other is a hatchet.                        Unfortunately, you are only able to carry one of these two items.</p>
         <p>Will you pick up the hatchet, or inspect the apples?</p>
-        
-        <p class="link1"><a href="%s">Pick up the hatchet.</a></p>
-        <p class="link2"><a href="%s">Inspect the apples.</a></p>
-        <img src="intropageart%20(720x447).jpg">
-        
-   </div> 
+
+        <p class="link1"><a href="option1">Pick up the hatchet.</a></p>
+        <p class="link2"><a href="option2">Inspect the apples.</a></p>
+        <br />
+        <img src="/static/intropageart%20(720x447).jpg">
+
+   </div>
     </section>
 <!--End Left Column-->
-    
+
 <!--BEGIN RIGHT COLUMN-->
     <aside>
         <table>
             <caption><h3>Your Stats and Special Items</h3></caption>
             <tr>
-                <td><img src="heart%20(35x50).jpg" alt="heart health"/>&nbsp&nbspHealth</td>
+                <td><img src="/static/heart%20(35x50).jpg" alt="heart health"/>&nbsp&nbspHealth</td>
             </tr>
             <tr>
-                <td><img src="hungrystomach%20(50x47).jpg" alt="hunger"/>&nbsp&nbspHunger</td>
+                <td><img src="/static/hungrystomach%20(50x47).jpg" alt="hunger"/>&nbsp&nbspHunger</td>
             </tr>
             <tr>
-                <td><img src="backpack%20(43x50).jpg" alt="special items"/>&nbsp&nbspSpecial Items</td>
+                <td><img src="/static/backpack%20(43x50).jpg" alt="special items"/>&nbsp&nbspSpecial Items</td>
             </tr>
         </table>
 
     </aside>
 <!--END RIGHT COLUMN-->
-    
+
 <footer>
    <small>
-   &copy; 2016, All Rights Reserved ~ Authored by Karla Haigh, Caitlin, Scott C, and Calvin Calvo  
+   &copy; 2016, All Rights Reserved ~ Authored by Karla Haigh, Caitlin, Scott C, and Calvin Calvo
    </small>
 </footer>
 </body>
-</html>    
+</html>
